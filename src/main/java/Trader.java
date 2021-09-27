@@ -99,7 +99,7 @@ public class Trader {
                 new Horse(),
                 new Camel(),
                 new Camel(),
-                new Camel()
+                new Camel(),
                 new Motorcycle()  
         );
 
