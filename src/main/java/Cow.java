@@ -1,3 +1,5 @@
+/* A sample class that implements the given interfaces.
+ */
 public class Cow implements Drivable, Domesticatable, Tradable {
     private int maxSpeed;
 

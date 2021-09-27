@@ -16,10 +16,10 @@ public class CowTest {
         c = new Cow();
     }
 
-//    @Test(timeout = 50)
-//    public void TestSound() {
-//        assertEquals("Moo!", c.sound());
-//    }
+    @Test(timeout = 50)
+    public void TestSound() {
+        assertEquals("Moo!", c.sound());
+    }
 
     @Test(timeout = 50)
     public void TestGetMaxSpeed() {
