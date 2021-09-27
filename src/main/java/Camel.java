@@ -1,16 +1,13 @@
-/* A sample class that implements the given interfaces.
- */
-
-public class Horse implements Drivable, Domesticatable, Tradable {
+public class Camel implements Drivable, Domesticatable, Tradable {
     private int maxSpeed;
 
-    public Horse() {
+    public Camel() {
         this.maxSpeed = 1;
     }
 
     @Override
     public String sound() {
-        return "Neigh!";
+        return "Mrrh!";
     }
 
     @Override
@@ -39,3 +36,4 @@ public class Horse implements Drivable, Domesticatable, Tradable {
         return id + " (Max speed: " + this.maxSpeed +")";
     }
 }
+
