@@ -100,6 +100,7 @@ public class Trader {
                 new Camel(),
                 new Camel(),
                 new Camel()
+                new Motorcycle()  
         );
 
         /* Below, we've created two Traders. Their money, inventory, and
