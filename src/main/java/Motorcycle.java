@@ -1,5 +1,11 @@
 /* A sample class that implements the given interfaces.
  */
+
+/* Motorcycle Class
+ * This is a motorcycle
+ * That is all
+ */
+
 public class Motorcycle implements Drivable, Tradable {
     private int maxSpeed;
 

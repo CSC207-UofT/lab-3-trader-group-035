@@ -9,28 +9,33 @@ import static org.junit.Assert.*;
 
 
 public class MotorcycleTest {
-    Motorcycle h;
+    Motorcycle m;
 
     @Before
     public void setUp() throws Exception {
-        h = new Motorcycle();
+        m = new Motorcycle();
     }
 
     @Test(timeout = 50)
     public void TestGetMaxSpeed() {
-        assertEquals(100, h.getMaxSpeed());
+        assertEquals(100, m.getMaxSpeed());
     }
 
-
+    @Test(timeout = 50)
+    public void TestUpgradeSpeed() {
+        m.upgradeSpeed();
+        assertEquals(102, m.getMaxSpeed());
+    }
+    
     @Test(timeout = 50)
     public void TestDowngradeSpeed() {
-        h.downgradeSpeed();
-        assertEquals(98, h.getMaxSpeed());
+        m.downgradeSpeed();
+        assertEquals(98, m.getMaxSpeed());
     }
 
     @Test(timeout = 50)
     public void TestGetPrice() {
-        assertEquals(10000, h.getPrice());
+        assertEquals(10000, m.getPrice());
     }
 
 }
