@@ -7,7 +7,7 @@ public class Bike implements Drivable, Tradable{
     }
 
     public String sound() {
-        return "Ding!Ding";
+        return "Ding!Ding!";
     }
 
     @Override
