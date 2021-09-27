@@ -9,33 +9,38 @@ import static org.junit.Assert.*;
 
 
 public class BullTest {
-    Bull h;
+    Bull b;
 
     @Before
     public void setUp() throws Exception {
-        h = new Bull();
+        b = new Bull();
     }
 
     @Test(timeout = 50)
     public void TestSound() {
-        assertEquals("RAWR!", h.sound());
+        assertEquals("RAWR!", b.sound());
+    }
+
+    @Test(timeout = 50)
+    public void TestGetMaxSpeed() {
+        assertEquals(1, b.getMaxSpeed());
     }
 
     @Test(timeout = 50)
     public void TestUpgradeSpeed() {
-        h.upgradeSpeed();
-        assertEquals(2, h.getMaxSpeed());
+        b.upgradeSpeed();
+        assertEquals(2, b.getMaxSpeed());
     }
 
     @Test(timeout = 50)
     public void TestDowngradeSpeed() {
-        h.downgradeSpeed();
-        assertEquals(0, h.getMaxSpeed());
+        b.downgradeSpeed();
+        assertEquals(0, b.getMaxSpeed());
     }
 
     @Test(timeout = 50)
     public void TestGetPrice() {
-        assertEquals(10, h.getPrice());
+        assertEquals(10, b.getPrice());
     }
 
 }
