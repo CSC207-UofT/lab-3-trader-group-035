@@ -4,7 +4,7 @@ public class Motorcycle implements Drivable, Tradable {
     private int maxSpeed;
 
     public Motorcycle() {
-        this.maxSpeed = 1;
+        this.maxSpeed = 100;
     }
 
     @Override
