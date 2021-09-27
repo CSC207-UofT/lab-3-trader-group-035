@@ -1,26 +1,26 @@
 /* A sample class that implements the given interfaces.
  */
 
-public class Horse implements Drivable, Domesticatable, Tradable {
+/* Motorcycle Class
+ * This is a motorcycle
+ * That is all
+ */
+
+public class Motorcycle implements Drivable, Tradable {
     private int maxSpeed;
 
-    public Horse() {
-        this.maxSpeed = 1;
-    }
-
-    @Override
-    public String sound() {
-        return "Neigh!";
+    public Motorcycle() {
+        this.maxSpeed = 100;
     }
 
     @Override
     public void upgradeSpeed() {
-        this.maxSpeed++;
+        this.maxSpeed += 2;
     }
 
     @Override
     public void downgradeSpeed() {
-        this.maxSpeed--;
+        this.maxSpeed -= 2;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Horse implements Drivable, Domesticatable, Tradable {
 
     @Override
     public int getPrice() {
-        return 10;
+        return 10000;
     }
 
     @Override
